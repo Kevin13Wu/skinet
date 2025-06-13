@@ -11,6 +11,7 @@ public static class OrderMappingExtensions
         {
             Id = order.Id,
             BuyerEmail = order.BuyerEmail,
+            OrderDate = order.OrderDate,
             ShippingAddress = order.ShippingAddress,
             PaymentSummary = order.PaymentSummary,
             DeliveryMethod = order.DeliveryMethod.Description,
@@ -29,7 +30,7 @@ public static class OrderMappingExtensions
         {
             ProductId = orderItem.ItemOrdered.ProductId,
             ProductName = orderItem.ItemOrdered.ProductName,
-            PicturetUrl = orderItem.ItemOrdered.PictureUrl,
+            PictureUrl = orderItem.ItemOrdered.PictureUrl,
             Price = orderItem.Price,
             Quantity = orderItem.Quantity
         };
